@@ -8,7 +8,7 @@ hamburger_icon.addEventListener('click', () => {
 });
 
 var i = 0;
-var txt = "Mes différentes compétences sont les suivantes "; /* The text */
+var txt = "Mes différentes compétences sont les suivantes :"; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
