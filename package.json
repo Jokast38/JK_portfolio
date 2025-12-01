@@ -29,7 +29,6 @@
     "react-slick": "^0.31.0",
     "slick-carousel": "^1.8.1"
   },
-  "homepage": "https://jokast38.fr/my-portfolio",
   "browserslist": {
     "production": [
       ">0.2%",
