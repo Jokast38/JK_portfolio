@@ -14,7 +14,7 @@ const Hero = () => {
           </h1>
 
           <h2 className="hero-subtitle">
-            Développeur Fullstack <br /> & Architecte Web
+            Développeur Fullstack <br /> Web, Mobile & IA
           </h2>
 
           <button className="hero-btn" onClick={() => {
