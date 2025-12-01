@@ -1,0 +1,195 @@
+/* ---------- SECTION BACKGROUND ---------- */
+
+.hero-section {
+  width: 100%;
+  padding: 120px 0;
+  background: linear-gradient(135deg, #0a0f18 0%, #121826 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Wrapper global */
+.hero-content {
+  width: 80%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ---------- LEFT TEXT ---------- */
+
+.hero-text {
+  max-width: 550px;
+}
+
+.hero-title {
+  font-size: 3.8rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.hero-title span {
+  color: #ff4d57;
+  /* Rouge accent comme dans ton modèle */
+}
+
+.hero-subtitle {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.hero-btn {
+  margin-top: 35px;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  background: #ff4d57;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 77, 87, 0.35);
+}
+
+/* ---------- RIGHT HEXAGON ---------- */
+
+.hero-hexagon-wrapper {
+  position: relative;
+}
+
+/* PHOTOS DANS HEXAGONE - FIX ROTATION + ZOOM + FILL */
+/* ------- CADRE HEXAGONAL EXTERNE ------- */
+
+.hero-hexagon-wrapper {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  padding: 12px;
+  /* épaisseur du cadre */
+  background:  #ff4d567e;
+  /* couleur du cadre */
+  clip-path: polygon(50% 0%,
+      90% 25%,
+      90% 75%,
+      50% 100%,
+      10% 75%,
+      10% 25%);
+  box-shadow: 0 0 35px rgb(255, 77, 86);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hexagon {
+  width: 360px;
+  height: 360px;
+  clip-path: polygon(50% 0%,
+      90% 25%,
+      90% 75%,
+      50% 100%,
+      10% 75%,
+      10% 25%);
+  overflow: hidden;
+  /* IMPORTANT pour ne pas que l’image dépasse */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: #ff4d57 0px 0px 20px 10px;
+}
+
+/* NOUVELLE VERSION DE L’IMAGE */
+.hero-img {
+  width: 140%;
+  /* Zoom pour remplir l’hexagone */
+  height: 80%;
+  /* Zoom vertical également */
+  object-fit: cover;
+  /* Remplissage parfait */
+  transform: rotate(-90deg);
+  /* Rotation vers la gauche */
+  object-position: center;
+  /* Centrer l’image */
+  border-radius: 0;
+  /* Pas de bord arrondi */
+}
+
+
+/* Glow rouge autour */
+.hexagon::before {
+  content: "";
+  position: absolute;
+  inset: -15px;
+  background: radial-gradient(50% 50% at center,
+      rgba(255, 77, 87, 0.45),
+      transparent);
+  filter: blur(25px);
+  z-index: -1;
+}
+
+/* Photo
+.hero-img {
+  width: 85%;
+  height: auto;
+  border-radius: 12px;
+} */
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 900px) {
+
+  .hero-content {
+    flex-direction: column-reverse;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .hexagon {
+    width: 290px;
+    height: 290px;
+  }
+
+  .hero-hexagon-wrapper {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-hexagon-wrapper {
+    width: 260px;
+    height: 260px;
+  }
+}
