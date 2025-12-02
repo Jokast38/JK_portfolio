@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="footer-column">
           <h3 className="footer-title">KASSA <span>Jokast.</span></h3>
           <p className="footer-text">
-            Développeur Fullstack & Architecte Web passionné par la création 
+            Développeur Fullstack Web, Mobile & IA passionné par la création 
             de solutions modernes, performantes et élégantes.
           </p>
         </div>
