@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/About.css";
 import aboutImg from "../assets/images/about.jpg"; // ⚠ remplace par ton image
-import cvFile from "../assets/CV/K-Jokast-v2-l.png"; // ⚠ adapte le chemin
+import cvFile from "../assets/CV/K-Jokast-2025-l.png"; // ⚠ adapte le chemin
 
 const About = () => {
   return (
