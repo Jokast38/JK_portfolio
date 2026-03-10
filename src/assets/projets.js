@@ -21,6 +21,8 @@ import sweetlawcookieImg from '../assets/images/sweetlawcookie.png';
 import vitalineImg from '../assets/images/vitaline.png';
 import iamelsyImg from '../assets/images/iamelsy.png';
 import accesImg from '../assets/images/acces-concert.png';
+import iaSmartChefImg from '../assets/images/iasmartchef.png';
+import resumeAnalyzerImg from '../assets/images/resumeanalyzer.png';
 
 const projetData = [
   {
@@ -182,6 +184,22 @@ const projetData = [
     tech: 'NextJS - Paypal - Gmail API',
     link: 'https://sweetlawcookie.fr',
     github: 'https://github.com/Jokast38/sweetlawcookie.fr.git'
+  },
+  {
+    title: 'IA SMART CHEF',
+    image: iaSmartChefImg,
+    description: 'IA SMART CHEF Project',
+    tech: 'ReactJS - Python - AI',
+    link: 'https://iasmartchef.fr/',
+    github: 'https://github.com/Jokast38/SMARTCHEF-beta'
+  },
+  {
+    title: 'Resume Analyzer OCR',
+    image: resumeAnalyzerImg,
+    description: 'Resume Analyzer OCR Project',
+    tech: 'ReactJS - Python - AI',
+    link: 'https://resume-analyzer-jk.onrender.com/',
+    github: 'https://github.com/Jokast38/resume-analyzer-jk'
   },
   {
     title: 'Prochaine Réalisation En cours',
