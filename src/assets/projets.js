@@ -23,6 +23,7 @@ import iamelsyImg from '../assets/images/iamelsy.png';
 import accesImg from '../assets/images/acces-concert.png';
 import iaSmartChefImg from '../assets/images/iasmartchef.png';
 import resumeAnalyzerImg from '../assets/images/resumeanalyzer.png';
+import jakalImg from '../assets/images/jackale.png';
 
 const projetData = [
   {
@@ -200,6 +201,13 @@ const projetData = [
     tech: 'ReactJS - Python - AI',
     link: 'https://resume-analyzer-jk.onrender.com/',
     github: 'https://github.com/Jokast38/resume-analyzer-jk'
+  },
+  {
+    title: 'JAKAL Project',
+    image: jakalImg,
+    description: 'JAKAL Project Description',
+    tech: 'ReactJS - NextJS - Supabase - meta tracking - AI',
+    link: 'https://jackale.fr',
   },
   {
     title: 'Prochaine Réalisation En cours',
