@@ -24,6 +24,7 @@ import accesImg from '../assets/images/acces-concert.png';
 import iaSmartChefImg from '../assets/images/iasmartchef.png';
 import resumeAnalyzerImg from '../assets/images/resumeanalyzer.png';
 import jakalImg from '../assets/images/jackale.png';
+import eddyDossouImg from '../assets/images/eddy.png';
 
 const projetData = [
   {
@@ -208,6 +209,13 @@ const projetData = [
     description: 'JAKAL Project Description',
     tech: 'ReactJS - NextJS - Supabase - meta tracking - AI',
     link: 'https://jackale.fr',
+  },
+  {
+    title: 'Eddy Dossou Photography Project',
+    image: eddyDossouImg,
+    description: 'Eddy Dossou Photography  Potrfolio Website',
+    tech: 'ReactJS - Python - MongoDB - SMTP - Cloudinary',
+    link: 'https://www.eddydossouphoto.fr',
   },
   {
     title: 'Prochaine Réalisation En cours',

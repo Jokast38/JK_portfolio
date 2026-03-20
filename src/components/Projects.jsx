@@ -7,6 +7,16 @@ import { FaStackOverflow, FaGithub } from "react-icons/fa";
 const Projects = () => {
   const [active, setActive] = useState(0);
 
+  const lastUploadedIndex = projetData.length > 1 ? projetData.length - 2 : 0;
+  const orderedProjects =
+    projetData.length > 1
+      ? [
+          projetData[lastUploadedIndex],
+          ...projetData.slice(0, lastUploadedIndex),
+          ...projetData.slice(lastUploadedIndex + 1)
+        ]
+      : projetData;
+
   const settings = {
     infinite: true,
     speed: 500,
@@ -51,7 +61,7 @@ const Projects = () => {
 
       <div className="projects-slider-container">
         <Slider {...settings}>
-          {projetData.map((projet, index) => (
+          {orderedProjects.map((projet, index) => (
             <div key={index} className="project-card-wrapper">
 
               <div className={`project-card ${active === index ? "active" : ""}`}>
