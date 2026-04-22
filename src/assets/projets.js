@@ -169,7 +169,7 @@ const projetData = [
     image: accesImg,
     description: 'Acces-Concert Billeterie Event',
     tech: 'NextJS - Supabase - meta tracking',
-    link: 'https://acces-concert.fr',
+    link: 'https://www.pulsearena.co/',
     // github: 'https://github.com/Jokast38/lumin33-homework.git'
   },   
   {
@@ -208,7 +208,7 @@ const projetData = [
     image: jakalImg,
     description: 'JAKAL Project Description',
     tech: 'ReactJS - NextJS - Supabase - meta tracking - AI',
-    link: 'https://jackale.fr',
+    link: 'https://www.jakal-cbd.com',
   },
   {
     title: 'Eddy Dossou Photography Project',
